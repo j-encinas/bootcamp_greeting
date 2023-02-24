@@ -1,3 +1,6 @@
+env:
+  CC_TEST_REPORTER_ID: ENCRYPTED[!a0309482dcf7cbf4e3495418742f805e5849b29dd4cfc16b80a792b8b2d5f923bdb4d69eab33e653806f7d1fc2126ff3!]
+
 container:
   image: cirrusci/android-sdk:30
   cpu: 4
