@@ -1,3 +1,10 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 
 ext.isCiServer = System.getenv().containsKey("CIRRUS_CI")
 ext.isMasterBranch = System.getenv()["CIRRUS_BRANCH"] == "main"
@@ -14,13 +21,6 @@ buildCache {
   }
 }
 
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
